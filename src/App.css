@@ -1,0 +1,21 @@
+.app-wrapper {
+  font-family: Roboto;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 5px;
+    grid-template-areas: 
+  "h h"
+  "n c"
+}
+
+.app-wrapper-content {
+padding: 10px;
+grid-area: c;
+background: #fff;
+border: 1px solid #597081; 
+border-radius: 10px;
+box-shadow: 0 0 2px 2px grey inset;
+}
