@@ -3,18 +3,22 @@ import styles from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
 const MyPosts = () => {
-  let messagesData = [
-{
-  id: 1,
-  post: 'My first post?!',
-  likesCount: 0,
-},
-{
-  id: 2,
-  post: 'And the second post!?',
-  likesCount: 28,
-},
-];
+  let posts = [
+    {
+      id: 1,
+      post: "My first post?!",
+      likesCount: 3
+    },
+    {
+      id: 2,
+      post: "And the second post!?",
+      likesCount: 28
+    }
+  ];
+
+  let postsElements = posts.map(postItem => (
+    <Post id={postItem.id} post={postItem.post} likesCount={postItem.likesCount} />
+  ));
 
   return (
     <div className={styles.postsBlock}>
@@ -27,10 +31,7 @@ const MyPosts = () => {
           <button>Add post</button>
         </div>
       </div>
-      <div className={styles.posts}>
-        <Post message={messagesData[0].post} likesCount={messagesData[0].likesCount} />
-        <Post message={messagesData[1].post} likesCount={messagesData[1].likesCount} />
-      </div>
+      <div className={styles.posts}>{postsElements}</div>
     </div>
   );
 };
