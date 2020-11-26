@@ -1,0 +1,11 @@
+.profileBackground img {
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.descriptionBlock {
+  padding: 10px;
+}
+
+
