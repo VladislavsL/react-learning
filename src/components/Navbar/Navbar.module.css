@@ -30,4 +30,5 @@
 .nav .item a.active {
   background: hsl(176, 100%, 26%);
   font-weight: 700;
+  color: rgb(165, 247, 72);
 }
