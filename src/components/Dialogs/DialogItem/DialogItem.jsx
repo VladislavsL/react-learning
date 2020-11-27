@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import styles from "./DialogItem.module.css";
 import { NavLink } from "react-router-dom";
 
+
 const DialogItem = props => {
-  let path = "/dialogs/" + props.id;
   return (
     <div className={styles.dialog}>
-      <NavLink activeClassName={styles.active} to={path}> {props.name}</NavLink>
+      <NavLink activeClassName={styles.active} to={"/dialogs/" + props.id}> {props.name}</NavLink>
     </div>
   );
 };
