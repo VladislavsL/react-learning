@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "./style.css";
+import State from "./state/state"
 
 let dialogs = [
     {
@@ -65,4 +66,4 @@ let dialogs = [
 
 const root = document.getElementById("root");
 
-ReactDOM.render(<App posts={posts} dialogs={dialogs} messages={messages}/>, root);
+ReactDOM.render(<App state={State}/>, root);
