@@ -12,3 +12,13 @@ color: hsl(176, 100%, 26%);
   font-weight: 700;
   font-size: 20px;
 }
+
+.avatar {
+  padding-right: 5px;
+  width: 30px;
+  border-radius: 50px;
+  display: block;
+}
+.dialogContainer {
+  display: flex;
+}
